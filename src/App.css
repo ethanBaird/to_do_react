@@ -11,6 +11,10 @@ h1 {
   margin-bottom: 0px;
 }
 
+.App > h2 {
+  padding: 1rem;
+}
+
 form {
   display: flex;
   justify-content: flex-end;
@@ -42,18 +46,27 @@ li {
   margin: 10px;
   padding: 16px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
+  align-items: center;
   border-radius: 5px;
 }
 
+li > button {
+  height: 1.5rem;
+}
+
 .high {
-  border: 5px solid red;
+  border: 3px solid red;
   color: red;
   font-style: italic;
 }
 
 .low {
-  border: 5px solid green;
+  border: 3px solid green;
+}
+
+.completed {
+  border: 3px solid black 
 }
 
 .button {
