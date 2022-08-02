@@ -11,19 +11,12 @@ function App() {
 
   const [newTask, setNewTask] = useState('');
 
-  const tasksNodes = tasks.map((task, index, tasks) => {
-    if (task.completed === false && tasks.length !== 0) {
+  const tasksNodes = tasks.map((task, index) => {
+    if (task.completed === false) {
       return (
         <li key={index} className= {task.priority}>
           <h2>{task.name}</h2>
-          <button className='button' onClick={() => {handleTaskComlpeted(index)}}>Completed</button>
-        </li>
-      )
-    }
-    else if (tasks.every( (task) => task.completed === true)){
-      return (
-        <li key={index}>
-          <h2>There are no tasks to do!</h2>
+        <button className='button' onClick={() => {handleTaskComlpeted(index)}}>Completed</button>
         </li>
       )
     }
