@@ -63,7 +63,7 @@ function App() {
       <form onSubmit={saveNewTask}>
         <div className='task-name'>
           <label htmlFor='add-task'>Add Task:</label>
-          <input id='add-task' type='text' name='name' value={newTask} onChange={handleTaskInput}/>
+          <input id='add-task' type='text' name='name' value={newTask} onChange={handleTaskInput} required placeholder='enter task'/>
         </div>
         <div className='radio'>
           <label htmlFor='priority'>Priority:</label>
